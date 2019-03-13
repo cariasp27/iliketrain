@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+  <meta charset="UTF-8">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron">
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <div class="card border-dark mb-3">
+          <div class="card-header">
+            <h1>Train Schedule</h1>
+          </div>
+          <div class="card-body">
+            <table id="iliketrains">
+              <tr>
+                <th>Train</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>First Departure</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <br>
+      <div class="card border-dark mb-3">
+        <div class="card-header">
+
+        </div>
+        <div class="card-body">
+
+          <form role="form">
+
+            <div class="form-group">
+              <label for="trainame">Train Name</label>
+              <input type="text" class="form-control" id="trainame">
+            </div>
+
+            <div class="form-group">
+              <label for="destination">Destination</label>
+              <input class="form-control" id="destination">
+              </input>
+            </div>
+
+            <div class="form-group">
+              <label for="fttime">First Train Time (HH:mm - military)</label>
+              <input type="text" class="form-control" id="fttime">
+            </div>
+
+            <div class="form-group">
+              <label for="frequency">Frequency</label>
+              <input type="number" class="form-control" id="frequency">
+            </div>
+
+            <button type="submit" class="btn btn-default" id="runToTheHills">Submit</button>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Script Links -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

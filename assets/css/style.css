@@ -1,0 +1,33 @@
+body            {
+    background: url(../images/brick.jpg);
+}
+
+h1 {
+    text-align: center;
+}
+
+th {
+    padding-right: 100px;
+  }
+
+.btn {
+    background-color: #3b3036;
+}
+
+.card-body {
+    background-color: #743933;
+}
+
+.card-header {
+    background-color: #9b5744;
+}
+
+.form-control {
+    background-color: #c27b67;
+}
+.jumbotron {
+    background: url(../images/trains.jpg) no-repeat center ;
+    background-size: 75%;
+    height: 400px;
+}
+
